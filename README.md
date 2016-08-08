@@ -12,6 +12,6 @@ First tests will deal with being presence of all kind of elements:
 - left hand Configuration module menu items 
 
 Future: 
-Check presence of most important fields on CI forms
-Test functionality as creating New CIs (per CI Class)
-Test BRs on CI classes
+- Check presence of most important fields on CI forms
+- Test functionality as creating New CIs (per CI Class)
+- Test BRs on CI classes
