@@ -15,3 +15,4 @@ Future:
 - Check presence of most important fields on CI forms
 - Test functionality as creating New CIs (per CI Class)
 - Test BRs on CI classes
+
