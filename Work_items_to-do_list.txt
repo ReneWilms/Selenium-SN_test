@@ -1,4 +1,0 @@
-Would it be a good idea to make a list of workitems that potential contributors can work on?
-
-ReneNL: would like to complete the test cases to check the Configuration module menu choices.
-
