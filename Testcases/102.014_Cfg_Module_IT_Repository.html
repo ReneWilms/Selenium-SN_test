@@ -28,6 +28,59 @@
 	<td>//a[contains(text(),'Choice Responsibility Types')]</td>
 	<td></td>
 </tr>
+<!--Check whether the Responsibilties records them self can be reached-->
+<tr>
+	<td>open</td>
+	<td>/u_responsibilities_list.do</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//nav[@id='list_nav_u_responsibilities']/div/div/a/h1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//button[@id='sysverb_new']</td>
+	<td></td>
+</tr>
+<!--Check whether the CMDB Document records them self can be reached-->
+<tr>
+	<td>open</td>
+	<td>/u_cmdb_document_list.do</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//nav[@id='list_nav_u_cmdb_document']/div/div/a/h1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//button[@id='sysverb_new']</td>
+	<td></td>
+</tr>
+<!--Bring back to normal worker UI-->
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
 </tbody></table>
 </body>
 </html>
