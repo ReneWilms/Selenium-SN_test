@@ -4,50 +4,39 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="https://kpnacc.service-now.com/" />
-<title>101.000 to load page</title>
+<title>101.104_IM_CMDB_CI_CLUSTER</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">101.000 to load page</td></tr>
+<tr><td rowspan="1" colspan="3">101.104_IM_CMDB_CI_CLUSTER</td></tr>
 </thead><tbody>
-<tr>
-	<td>selectFrame</td>
-	<td>gsft_nav</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=filter</td>
-	<td>import</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=d1bab22bac143c84005ef713c0c7eeef</td>
-	<td></td>
-</tr>
-<!--Required a "waitForElementPresent" like command but that is not working-->
-<tr>
-	<td>pause</td>
-	<td>12000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>setTimeout</td>
-	<td>6000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectWindow</td>
-	<td>name=gsft_main</td>
-	<td></td>
-</tr>
+<!--// not yet available-->
 <tr>
 	<td>click</td>
 	<td>name=sysparm_import_set_tablename</td>
 	<td></td>
 </tr>
-<!--Above statements to make sure the load action form is shown-->
+<tr>
+	<td>select</td>
+	<td>name=sysparm_import_set_tablename</td>
+	<td>label=108_IM_CMDB_CI_... [u_im_cmdb_ci_...]</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;u_im_cmdb_ci_...&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=header_row</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=header_row</td>
+	<td>2</td>
+</tr>
 </tbody></table>
 </body>
 </html>
