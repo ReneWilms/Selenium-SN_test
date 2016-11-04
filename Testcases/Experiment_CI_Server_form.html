@@ -37,100 +37,266 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
-	<td>id=label.ni.cmdb_ci_server.u_cmdb_ci_functional</td>
+	<td>verifyVisible</td>
+	<td>id=label.cmdb_ci_server.company</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
+	<td>verifyVisible</td>
 	<td>id=ni.cmdb_ci_server.u_cmdb_ci_functional</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
-	<td>id=label.ni.cmdb_ci_server.u_cmdb_ci_functional</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyElementPresent</td>
-	<td>id=ni.cmdb_ci_server.u_cmdb_ci_functional</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyElementPresent</td>
-	<td>id=label.ni.cmdb_ci_server.virtual</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyElementPresent</td>
+	<td>verifyVisible</td>
 	<td>id=ni.cmdb_ci_server.virtual</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
-	<td>id=label.ni.cmdb_ci_server.virtual</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyElementPresent</td>
-	<td>id=ni.cmdb_ci_server.virtual</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyElementPresent</td>
+	<td>verifyVisible</td>
 	<td>id=cmdb_ci_server.name</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
+	<td>verifyVisible</td>
 	<td>id=cmdb_ci_server.u_customer_ci_name</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
+	<td>verifyVisible</td>
 	<td>id=cmdb_ci_server.u_third_party_ci_name</td>
 	<td></td>
 </tr>
+<!---->
+<!--Situation Is Functional and Is Virtual unchecked-->
 <tr>
-	<td>verifyElementPresent</td>
+	<td>verifyVisible</td>
 	<td>id=sys_display.cmdb_ci_server.u_datacenter</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
+	<td>verifyVisible</td>
 	<td>id=sys_display.cmdb_ci_server.location</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
+	<td>verifyVisible</td>
 	<td>id=sys_display.cmdb_ci_server.u_datacenter_responsible_group</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
+	<td>verifyVisible</td>
 	<td>id=sys_display.cmdb_ci_server.u_computer_room</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
+	<td>verifyVisible</td>
 	<td>id=sys_display.cmdb_ci_server.u_rack</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
+	<td>verifyVisible</td>
 	<td>id=cmdb_ci_server.u_rack_he_start</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
+	<td>verifyVisible</td>
 	<td>id=cmdb_ci_server.u_rack_he_end</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
+	<td>verifyVisible</td>
 	<td>id=cmdb_ci_server.u_module_position</td>
 	<td></td>
 </tr>
+<!---->
+<tr>
+	<td>click</td>
+	<td>id=ni.cmdb_ci_server.u_cmdb_ci_functional</td>
+	<td></td>
+</tr>
+<!--Situation Is Functional checked and Is Virtual unchecked-->
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=sys_display.cmdb_ci_server.u_datacenter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=sys_display.cmdb_ci_server.location</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=sys_display.cmdb_ci_server.u_datacenter_responsible_group</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=sys_display.cmdb_ci_server.u_computer_room</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=sys_display.cmdb_ci_server.u_rack</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=cmdb_ci_server.u_rack_he_start</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=cmdb_ci_server.u_rack_he_end</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=cmdb_ci_server.u_module_position</td>
+	<td></td>
+</tr>
+<!---->
+<tr>
+	<td>click</td>
+	<td>id=ni.cmdb_ci_server.virtual</td>
+	<td></td>
+</tr>
+<!--Situation Is Functional and Is Virtual both checked-->
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=sys_display.cmdb_ci_server.u_datacenter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=sys_display.cmdb_ci_server.location</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=sys_display.cmdb_ci_server.u_datacenter_responsible_group</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=sys_display.cmdb_ci_server.u_computer_room</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=sys_display.cmdb_ci_server.u_rack</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=cmdb_ci_server.u_rack_he_start</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=cmdb_ci_server.u_rack_he_end</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=cmdb_ci_server.u_module_position</td>
+	<td></td>
+</tr>
+<!---->
+<tr>
+	<td>click</td>
+	<td>id=ni.cmdb_ci_server.u_cmdb_ci_functional</td>
+	<td></td>
+</tr>
+<!--Situation Is Functional unchecked and Is Virtual checked-->
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=sys_display.cmdb_ci_server.u_datacenter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=sys_display.cmdb_ci_server.location</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=sys_display.cmdb_ci_server.u_datacenter_responsible_group</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=sys_display.cmdb_ci_server.u_computer_room</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=sys_display.cmdb_ci_server.u_rack</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=cmdb_ci_server.u_rack_he_start</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=cmdb_ci_server.u_rack_he_end</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=cmdb_ci_server.u_module_position</td>
+	<td></td>
+</tr>
+<!---->
+<tr>
+	<td>click</td>
+	<td>id=ni.cmdb_ci_server.virtual</td>
+	<td></td>
+</tr>
+<!--Situation Is Functional and Is Virtual both unchecked (again)-->
+<tr>
+	<td>verifyVisible</td>
+	<td>id=sys_display.cmdb_ci_server.u_datacenter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=sys_display.cmdb_ci_server.location</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=sys_display.cmdb_ci_server.u_datacenter_responsible_group</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=sys_display.cmdb_ci_server.u_computer_room</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=sys_display.cmdb_ci_server.u_rack</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_server.u_rack_he_start</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_server.u_rack_he_end</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_server.u_module_position</td>
+	<td></td>
+</tr>
+<!---->
 <tr>
 	<td>verifyElementPresent</td>
 	<td>id=cmdb_ci_server.serial_number</td>

@@ -13,7 +13,7 @@
 </thead><tbody>
 <tr>
 	<td>verifyElementPresent</td>
-	<td>id=sys_display.cmdb_ci_server.u_rim_profile</td>
+	<td>id=cmdb_ci_server.u_rim_profile</td>
 	<td></td>
 </tr>
 <tr>
@@ -33,17 +33,12 @@
 </tr>
 <tr>
 	<td>verifyElementPresent</td>
-	<td>id=sys_display.cmdb_ci_server.u_rim_snmp_profile</td>
+	<td>id=cmdb_ci_server.u_rim_snmp_profile</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyElementPresent</td>
-	<td>id=label.ni.cmdb_ci_server.u_rim_ci_in_maintenance</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyElementPresent</td>
-	<td>id=ni.cmdb_ci_server.u_rim_ci_in_maintenance</td>
+	<td>id=cmdb_ci_server.u_rim_ci_in_maintenance</td>
 	<td></td>
 </tr>
 <tr>
@@ -61,166 +56,311 @@
 	<td>id=cmdb_ci_server.u_rim_run_type</td>
 	<td></td>
 </tr>
+<!---->
+<!--Next test allways succeeds as the value is in the choice list-->
 <tr>
-	<td>verifyElementPresent</td>
+	<td>verifyVisible</td>
 	<td>css=option[value=&quot;daily&quot;]</td>
 	<td></td>
 </tr>
+<!--Test of selected choice value is not yet possible (don't know how to do it)-->
 <tr>
-	<td>verifyElementPresent</td>
+	<td>store</td>
+	<td>DailyMonthlyOncePeriodicallyWeekly</td>
+	<td>RIM_run_types</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>id=cmdb_ci_server.u_rim_run_type</td>
+	<td>RIM_run_type</td>
+</tr>
+<tr>
+	<td>verifyEval</td>
+	<td>storedVars['RIM_run_type']==storedVars['RIM_run_types']</td>
+	<td>true</td>
+</tr>
+<!---->
+<!--Check the effect of Daily-->
+<tr>
+	<td>select</td>
+	<td>id=cmdb_ci_server.u_rim_run_type</td>
+	<td>label=Daily</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
 	<td>id=cmdb_ci_server.u_rim_run_timedur_hour</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
+	<td>verifyVisible</td>
 	<td>id=cmdb_ci_server.u_rim_run_timedur_min</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
+	<td>verifyVisible</td>
 	<td>id=cmdb_ci_server.u_rim_run_timedur_sec</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
-	<td>id=cmdb_ci_server.u_rim_run_type</td>
+	<td>verifyNotVisible</td>
+	<td>id=cmdb_ci_server.u_rim_run_dayofmonth</td>
 	<td></td>
 </tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=cmdb_ci_server.u_rim_run_dayofweek</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=cmdb_ci_server.u_rim_run_start</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=ni.cmdb_ci_server.u_rim_run_perioddur_day</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=ni.cmdb_ci_server.u_rim_run_perioddur_hour</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=ni.cmdb_ci_server.u_rim_run_perioddur_min</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=ni.cmdb_ci_server.u_rim_run_perioddur_sec</td>
+	<td></td>
+</tr>
+<!---->
 <tr>
 	<td>select</td>
 	<td>id=cmdb_ci_server.u_rim_run_type</td>
 	<td>label=Monthly</td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
-	<td>css=option[value=&quot;monthly&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyElementPresent</td>
+	<td>verifyVisible</td>
 	<td>id=cmdb_ci_server.u_rim_run_dayofmonth</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
-	<td>id=cmdb_ci_server.u_rim_run_dayofmonth</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyElementPresent</td>
+	<td>verifyVisible</td>
 	<td>id=cmdb_ci_server.u_rim_run_timedur_hour</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
+	<td>verifyVisible</td>
 	<td>id=cmdb_ci_server.u_rim_run_timedur_min</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
+	<td>verifyVisible</td>
 	<td>id=cmdb_ci_server.u_rim_run_timedur_sec</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
-	<td>id=cmdb_ci_server.u_rim_run_type</td>
+	<td>verifyNotVisible</td>
+	<td>id=cmdb_ci_server.u_rim_run_dayofweek</td>
 	<td></td>
 </tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=cmdb_ci_server.u_rim_run_start</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=ni.cmdb_ci_server.u_rim_run_perioddur_day</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=ni.cmdb_ci_server.u_rim_run_perioddur_hour</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=ni.cmdb_ci_server.u_rim_run_perioddur_min</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=ni.cmdb_ci_server.u_rim_run_perioddur_sec</td>
+	<td></td>
+</tr>
+<!---->
 <tr>
 	<td>select</td>
 	<td>id=cmdb_ci_server.u_rim_run_type</td>
 	<td>label=Once</td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
-	<td>css=option[value=&quot;once&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyElementPresent</td>
+	<td>verifyVisible</td>
 	<td>id=cmdb_ci_server.u_rim_run_start</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
-	<td>id=cmdb_ci_server.u_rim_run_type</td>
+	<td>verifyNotVisible</td>
+	<td>id=cmdb_ci_server.u_rim_run_timedur_hour</td>
 	<td></td>
 </tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=cmdb_ci_server.u_rim_run_timedur_min</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=cmdb_ci_server.u_rim_run_timedur_sec</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=cmdb_ci_server.u_rim_run_dayofmonth</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=cmdb_ci_server.u_rim_run_dayofweek</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=ni.cmdb_ci_server.u_rim_run_perioddur_day</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=ni.cmdb_ci_server.u_rim_run_perioddur_hour</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=ni.cmdb_ci_server.u_rim_run_perioddur_min</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=ni.cmdb_ci_server.u_rim_run_perioddur_sec</td>
+	<td></td>
+</tr>
+<!---->
 <tr>
 	<td>select</td>
 	<td>id=cmdb_ci_server.u_rim_run_type</td>
 	<td>label=Periodically</td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
-	<td>css=option[value=&quot;periodically&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyElementPresent</td>
+	<td>verifyVisible</td>
 	<td>id=cmdb_ci_server.u_rim_run_start</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
+	<td>verifyVisible</td>
 	<td>id=ni.cmdb_ci_server.u_rim_run_perioddur_day</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
+	<td>verifyVisible</td>
 	<td>id=ni.cmdb_ci_server.u_rim_run_perioddur_hour</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
+	<td>verifyVisible</td>
 	<td>id=ni.cmdb_ci_server.u_rim_run_perioddur_min</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
+	<td>verifyVisible</td>
 	<td>id=ni.cmdb_ci_server.u_rim_run_perioddur_sec</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
-	<td>id=cmdb_ci_server.u_rim_run_type</td>
+	<td>verifyNotVisible</td>
+	<td>id=cmdb_ci_server.u_rim_run_timedur_hour</td>
 	<td></td>
 </tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=cmdb_ci_server.u_rim_run_timedur_min</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=cmdb_ci_server.u_rim_run_timedur_sec</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=cmdb_ci_server.u_rim_run_dayofmonth</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=cmdb_ci_server.u_rim_run_dayofweek</td>
+	<td></td>
+</tr>
+<!---->
 <tr>
 	<td>select</td>
 	<td>id=cmdb_ci_server.u_rim_run_type</td>
 	<td>label=Weekly</td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
-	<td>css=option[value=&quot;weekly&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyElementPresent</td>
+	<td>verifyVisible</td>
 	<td>id=cmdb_ci_server.u_rim_run_dayofweek</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
-	<td>id=cmdb_ci_server.u_rim_run_dayofweek</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyElementPresent</td>
+	<td>verifyVisible</td>
 	<td>id=cmdb_ci_server.u_rim_run_timedur_hour</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
+	<td>verifyVisible</td>
 	<td>id=cmdb_ci_server.u_rim_run_timedur_min</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
+	<td>verifyVisible</td>
 	<td>id=cmdb_ci_server.u_rim_run_timedur_sec</td>
 	<td></td>
 </tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=cmdb_ci_server.u_rim_run_start</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=ni.cmdb_ci_server.u_rim_run_perioddur_day</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=ni.cmdb_ci_server.u_rim_run_perioddur_hour</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=ni.cmdb_ci_server.u_rim_run_perioddur_min</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=ni.cmdb_ci_server.u_rim_run_perioddur_sec</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=cmdb_ci_server.u_rim_run_dayofmonth</td>
+	<td></td>
+</tr>
+<!---->
 <tr>
 	<td>verifyElementPresent</td>
 	<td>id=label.ni.cmdb_ci_server.u_rim_exists</td>
