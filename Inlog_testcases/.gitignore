@@ -1,7 +1,3 @@
-# Testcases with login info
-*login*.*
-
-
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -11,6 +7,11 @@ Desktop.ini
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
+
+# ==========IMPORTANT FOR SECURITY REASONS=====
+# Testcases with login info
+*login*.*
+
 
 # Windows Installer files
 *.cab
