@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://kpnacc.service-now.com/" />
+<title>Experiment CI form</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Experiment CI form</td></tr>
+</thead><tbody>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>gsft_nav</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Network Gear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>name=gsft_main</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=sysverb_new</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=label.cmdb_ci_netgear.company</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=ni.cmdb_ci_netgear.u_cmdb_ci_functional</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=ni.cmdb_ci_netgear.virtual</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_netgear.name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_netgear.u_customer_ci_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_netgear.u_third_party_ci_name</td>
+	<td></td>
+</tr>
+<!---->
+<!--Situation Is Functional and Is Virtual unchecked-->
+<tr>
+	<td>verifyVisible</td>
+	<td>id=sys_display.cmdb_ci_netgear.u_datacenter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=sys_display.cmdb_ci_netgear.location</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=sys_display.cmdb_ci_netgear.u_datacenter_responsible_group</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=sys_display.cmdb_ci_netgear.u_computer_room</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=sys_display.cmdb_ci_netgear.u_rack</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_netgear.u_rack_he_start</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_netgear.u_rack_he_end</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_netgear.u_module_position</td>
+	<td></td>
+</tr>
+<!---->
+<tr>
+	<td>click</td>
+	<td>id=ni.cmdb_ci_netgear.u_cmdb_ci_functional</td>
+	<td></td>
+</tr>
+<!--Situation Is Functional checked and Is Virtual unchecked-->
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=sys_display.cmdb_ci_netgear.u_datacenter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=sys_display.cmdb_ci_netgear.location</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=sys_display.cmdb_ci_netgear.u_datacenter_responsible_group</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=sys_display.cmdb_ci_netgear.u_computer_room</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=sys_display.cmdb_ci_netgear.u_rack</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=cmdb_ci_netgear.u_rack_he_start</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=cmdb_ci_netgear.u_rack_he_end</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=cmdb_ci_netgear.u_module_position</td>
+	<td></td>
+</tr>
+<!---->
+<tr>
+	<td>click</td>
+	<td>id=ni.cmdb_ci_netgear.virtual</td>
+	<td></td>
+</tr>
+<!--Situation Is Functional and Is Virtual both checked-->
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=sys_display.cmdb_ci_netgear.u_datacenter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=sys_display.cmdb_ci_netgear.location</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=sys_display.cmdb_ci_netgear.u_datacenter_responsible_group</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=sys_display.cmdb_ci_netgear.u_computer_room</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=sys_display.cmdb_ci_netgear.u_rack</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=cmdb_ci_netgear.u_rack_he_start</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=cmdb_ci_netgear.u_rack_he_end</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=cmdb_ci_netgear.u_module_position</td>
+	<td></td>
+</tr>
+<!---->
+<tr>
+	<td>click</td>
+	<td>id=ni.cmdb_ci_netgear.u_cmdb_ci_functional</td>
+	<td></td>
+</tr>
+<!--Situation Is Functional unchecked and Is Virtual checked-->
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=sys_display.cmdb_ci_netgear.u_datacenter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=sys_display.cmdb_ci_netgear.location</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=sys_display.cmdb_ci_netgear.u_datacenter_responsible_group</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=sys_display.cmdb_ci_netgear.u_computer_room</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=sys_display.cmdb_ci_netgear.u_rack</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=cmdb_ci_netgear.u_rack_he_start</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=cmdb_ci_netgear.u_rack_he_end</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=cmdb_ci_netgear.u_module_position</td>
+	<td></td>
+</tr>
+<!---->
+<tr>
+	<td>click</td>
+	<td>id=ni.cmdb_ci_netgear.virtual</td>
+	<td></td>
+</tr>
+<!--Situation Is Functional and Is Virtual both unchecked (again)-->
+<tr>
+	<td>verifyVisible</td>
+	<td>id=sys_display.cmdb_ci_netgear.u_datacenter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=sys_display.cmdb_ci_netgear.location</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=sys_display.cmdb_ci_netgear.u_datacenter_responsible_group</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=sys_display.cmdb_ci_netgear.u_computer_room</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=sys_display.cmdb_ci_netgear.u_rack</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_netgear.u_rack_he_start</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_netgear.u_rack_he_end</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_netgear.u_module_position</td>
+	<td></td>
+</tr>
+<!---->
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_netgear.serial_number</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_netgear.asset_tag</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_netgear.u_system_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_netgear.u_full_system_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=sys_display.cmdb_ci_netgear.department</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=sys_display.cmdb_ci_netgear.assigned_to</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_netgear.operational_status</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_netgear.u_environment</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_netgear.install_status</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=sys_display.cmdb_ci_netgear.u_customer_product_model_id</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_netgear.u_risk_letter_expiration_date</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_netgear.u_ci_type</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=sys_display.cmdb_ci_netgear.u_overal_res_group</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=sys_display.cmdb_ci_netgear.u_ci_responsible_group</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=sys_display.cmdb_ci_netgear.support_group</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=sys_display.cmdb_ci_netgear.u_task_number</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_netgear.u_physical_ci_change_reason</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_netgear.u_physical_ci_change_date</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_netgear.comments</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=sys_display.cmdb_ci_netgear.managed_by</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=sys_display.cmdb_ci_netgear.owned_by</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>id=cmdb_ci_netgear.u_produced</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_netgear.u_warranty_start_date</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_netgear.warranty_expiration</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_netgear.install_date</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_netgear.u_functions_unlock</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_netgear.u_function</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_netgear.u_security_protocol</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=label.ni.cmdb_ci_netgear.u_critical</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=ni.cmdb_ci_netgear.u_critical</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_netgear.po_number</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=sys_display.cmdb_ci_netgear.vendor</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_netgear.u_acquisition_type</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_netgear.u_quantity</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_netgear.u_purchase_value.display</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_netgear.purchase_date</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_netgear.u_order_received</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
