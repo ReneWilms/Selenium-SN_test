@@ -4,43 +4,46 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="https://kpnacc.service-now.com/" />
-<title>102.011_Cfg_Module_RIM</title>
+<title>103.101_CI_Server_form_IsIS</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">102.011_Cfg_Module_RIM</td></tr>
+<tr><td rowspan="1" colspan="3">103.101_CI_Server_form_IsIS</td></tr>
 </thead><tbody>
-<!--RIM submenu-->
 <tr>
 	<td>click</td>
-	<td>//li[@id='module.2fcdafda87473c00f417936489434de4']/span</td>
+	<td>//div[@id='tabs2_section']/span[17]/span/span[2]</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>//li[@id='module.2fcdafda87473c00f417936489434de4']/span</td>
-	<td></td>
-</tr>
-<!--Menu items of this sub-list-->
-<tr>
-	<td>verifyElementPresent</td>
-	<td>//a[contains(text(),'RIM Profile')]</td>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_server.u_isis_data_file</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
-	<td>//a[contains(text(),'Discovery Template')]</td>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_server.u_isis_discovery_model</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
-	<td>//a[contains(text(),'SNMP Profile')]</td>
+	<td>verifyVisible</td>
+	<td>id=label.ni.cmdb_ci_server.u_isis_exists</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyElementPresent</td>
-	<td>//a[contains(text(),'Subnet(RIM)')]</td>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_server.u_isis_first_discovered</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_server.u_isis_last_discovered</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cmdb_ci_server.u_isis_mac_address</td>
 	<td></td>
 </tr>
 </tbody></table>
