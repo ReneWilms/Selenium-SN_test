@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://kpnacc.service-now.com/" />
+<title>103.102_CI_Computer_BRs</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">103.102_CI_Computer_BRs</td></tr>
+</thead><tbody>
+<!--// Open Computer (Workstation) list view-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Computers (Workstations)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>name=gsft_main</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=sysverb_new</td>
+	<td></td>
+</tr>
+<!--//-->
+<!--// Enter values on the CI form-->
+<tr>
+	<td>type</td>
+	<td>id=sys_display.cmdb_ci_computer.company</td>
+	<td>KPN - Manufacturer</td>
+</tr>
+<!--// By sending an ENTER the assistance 'recent values'pop-up will be closed-->
+<tr>
+	<td>sendKeys</td>
+	<td>id=sys_display.cmdb_ci_computer.company</td>
+	<td>${KEY_ENTER}</td>
+</tr>
+<!--// Choose for Virtual CI easier to create-->
+<tr>
+	<td>click</td>
+	<td>id=ni.cmdb_ci_computer.u_cmdb_ci_functional</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=cmdb_ci_computer.name</td>
+	<td>test 103.102 Computer test BRs</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=cmdb_ci_computer.serial_number</td>
+	<td>test 103.102 Computer test BRs</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sys_display.cmdb_ci_computer.u_customer_product_model_id</td>
+	<td>Computer (Class)</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=sys_display.cmdb_ci_computer.u_customer_product_model_id</td>
+	<td>${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@id='sysverb_insert']</td>
+	<td></td>
+</tr>
+<!---->
+<!--// back on list view build a filter to select the just created CI-->
+<tr>
+	<td>click</td>
+	<td>id=cmdb_ci_computer_filter_toggle_image</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//td/table/tbody/tr[2]/td</td>
+	<td>All of these conditions must be met</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[4]/td/table/tbody/tr/td[5]/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//tr[5]/td/table/tbody/tr/td[2]/select</td>
+	<td>label=Name</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//tr[5]/td/table/tbody/tr/td[3]/select</td>
+	<td>label=is</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input.filerTableInput.form-control</td>
+	<td>test 103.102 Computer test BRs</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//td[4]/button</td>
+	<td></td>
+</tr>
+<!--// Open the CI form-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=test 103.102 Computer test BRs</td>
+	<td></td>
+</tr>
+<!--// Do an insert and stay action-->
+<tr>
+	<td>click</td>
+	<td>//button[@onclick=&quot;contextShow(event, '1', 200, grabOffsetTop(this) + 20, grabOffsetLeft(this) + 24);event.cancelBubble=true;Event.stop(event);&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//div[@id='context_1']/div[4]</td>
+	<td>Insert and Stay</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='context_1']/div[4]</td>
+	<td></td>
+</tr>
+<!--//-->
+<tr>
+	<td>waitForText</td>
+	<td>css=div.outputmsg_text</td>
+	<td>Invalid update</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='']</td>
+	<td>Name [test 103.102 Computer test BRs] is not unique within company!</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>xpath=(//div[@id=''])[2]</td>
+	<td>Serial number [test 103.102 Computer test BRs] is not unique with this company</td>
+</tr>
+<!--// error seen Reload the form-->
+<tr>
+	<td>click</td>
+	<td>//button[@onclick=&quot;contextShow(event, '1', 200, grabOffsetTop(this) + 20, grabOffsetLeft(this) + 24);event.cancelBubble=true;Event.stop(event);&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//div[@id='context_1']/div[6]</td>
+	<td>Reload form</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='context_1']/div[6]</td>
+	<td></td>
+</tr>
+<!--// Make CI inactive -->
+<tr>
+	<td>click</td>
+	<td>id=ni.cmdb_ci_computer.u_active</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=sysverb_update_and_stay</td>
+	<td></td>
+</tr>
+<!--// Delete the test CI-->
+<tr>
+	<td>click</td>
+	<td>id=sysverb_delete</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
